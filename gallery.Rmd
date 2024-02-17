@@ -1,0 +1,49 @@
+---
+title: "gallery"
+author: "Mark Yeo"
+date: "2024-02-16"
+site: distill::distill_website
+theme: light
+css: custom.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{css, echo = FALSE}
+header {
+  display: none;
+  margin:0;
+}
+
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set()
+```
+
+```{r echo = FALSE, include = FALSE}
+library(tidyverse)
+library(pixture)
+```
+
+
+## Gallery of Images
+
+```{r echo = FALSE}
+list_photo1 <-
+  c("Picture1.jpg",
+    "Picture2.jpg",
+    "Picture3.jpg",
+    "Picture4.jpg",
+    "Picture5.jpg",
+    "Picture6.jpg",
+    "Picture7.jpg",
+    "Picture8.jpg",
+    "Picture9.jpg",
+    "Picture10.jpg")
+
+pixgallery(list_photo1)
+```
+
+
+
